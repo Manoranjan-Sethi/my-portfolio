@@ -216,7 +216,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://roaring-biscochitos-eb7254.netlify.app/pages/homepage",
+          url: "https://reliance-digital123.netlify.app/",
         },
         {
           name: "GitHub Repo",
