@@ -5,7 +5,6 @@
 import emoji from "react-easy-emoji";
 import sail from "./assets/images/sail.png";
 
-
 const illustration = {
   animated: true, // set to false to use static SVG
 };
@@ -14,7 +13,7 @@ const greeting = {
   username: "Manoranjan Sethi",
   title: "Hi all, I'm Manoranjan",
   subTitle: emoji(
-    "A passionate Full Stack Web Developer 🚀 having an experience of designing and building Web applications with HTML5, CSS3, JavaScript, React.js, Node.js, Express.js, MongoDB and Material-UI"
+    "A passionate Full Stack Web Developer 🚀 having an experience of designing and building Web applications with HTML5, CSS3, JavaScript, React.js, Redux, Node.js, Express.js, MongoDB and Material-UI"
   ),
   resumeLink:
     "https://drive.google.com/file/d/1hDSjE4iBivr_ss06Dhn-qObBJmmTN95M/view?usp=sharing",
@@ -29,7 +28,7 @@ const socialMediaLinks = {
   gmail: "manoranjansethi97@gmail.com",
   // gitlab: "https://gitlab.com/",
   // facebook: "https://www.facebook.com/"
-  instagram: "https://www.instagram.com/manoranjan-sethi/",
+  // instagram: "https://www.instagram.com/manoranjan-sethi/",
   twitter: "https://twitter.com/manoranjan_97",
   display: true, // Set true to display this section, defaults to false
 };
@@ -38,11 +37,10 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK WEB DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "MERN STACK DEVELOPMENT",
   skills: [
-    emoji(
-      "⚡ Develope highly interactive Front-end / User Interfaces for your web and mobile applications."
-    ),
+    emoji("⚡  I love designing websites and coding."),
+    emoji("⚡ Fun fact Time, Tide and JavaScript waits for none."),
     emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks."),
     // emoji("⚡ Integration of third party services such as Firebase"),
   ],
@@ -71,14 +69,22 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "React.js",
       fontAwesomeClassname: "fab fa-react",
     },
+    // {
+    //   skillName: "Redux",
+    //   fontAwesomeClassname: "fab fa-redux-js",
+    // },
     {
       skillName: "Node.js",
       fontAwesomeClassname: "fab fa-node",
     },
-    // {
-    //   skillName: "firebase",
-    //   fontAwesomeClassname: "fas fa-fire",
-    // },
+    {
+      skillName: "Express.js",
+      fontAwesomeClassname: "fab fa-node-js",
+    },
+    {
+      skillName: "firebase",
+      fontAwesomeClassname: "fas fa-fire",
+    },
     {
       skillName: "MongoDB",
       fontAwesomeClassname: "fa fa-database",
@@ -163,7 +169,7 @@ const workExperiences = {
       desc:
         "Rourkela Steel Plant (RSP), the first integrated steel plant in the public sector in India, was set up with German collaboration",
       descBullets: [],
-    }
+    },
     // {
     //   role: "Front-end Designer Intern",
     //   company: "TECHNOBOOT",
@@ -196,11 +202,16 @@ const bigProjects = {
       image: require("./assets/images/makeMyTrip.png"),
       projectName: "MakeMyTrip-clone",
       projectDesc:
-        "A clone of India's largest online travel company, MakeMyTrip.com. Tech-stack and libraries used React, Redux, Styled-componenets , Material-UI.",
+        "Make My Trip provides online travel services including airline tickets, domestic and international holiday packages, hotel reservations, rail, and bus tickets.",
+      projectTech: "Tech Stack : React JS. React-Redux, Chakra UI, JSON",
+      projectFeatures:
+        "Features : Sign Up, Login, Landing Page, Flight Page, Bookings and Payment page",
+      projectResponsibility:
+        "Responsibility : Made some custom components in the landing page along with the routing.",
       footerLink: [
         {
           name: "Visit Website",
-          // url: "https://india-mart-clone.netlify.app",
+          url: "https://precious-basbousa-c15149.netlify.app/",
         },
         {
           name: "GitHub Repo",
@@ -212,7 +223,12 @@ const bigProjects = {
       image: require("./assets/images/reliance.png"),
       projectName: "Reliance Digital-clone",
       projectDesc:
-        "Reliance Digital is a chain of stores that sells consumer electronic appliances. Tech-stack used JavaScript, HTML, CSS",
+        "Reliance Digital is a chain of stores that sells consumer electronic appliances.",
+      projectTech: "Tech Stack :- HtML5, CSS3. JS, JSON Server",
+      projectFeatures:
+        "Features : Sign Up, Login, Landing Page, Products, Add to cart and Payment page",
+      projectResponsibility:
+        "Responsibility : Made a landing page for all televisions products and the user can see each individual product with multiple images of a particular product",
       footerLink: [
         {
           name: "Visit Website",
@@ -228,7 +244,12 @@ const bigProjects = {
       image: require("./assets/images/rodan.png"),
       projectName: "Rodan + Fields-clone",
       projectDesc:
-        "Rodan + Fields is a leading skincare brand.  made with JavaScript , HTML, and CSS .",
+        "Rodan + Fields is a leading skincare brand founded in 2000 with a passion for giving people the best skin of their lives — and the confidence that comes with it.",
+      projectTech: "Tech Stack :- HtML5, CSS3. JS, JSON Server",
+      projectFeatures:
+        "Features : Sign Up, Login, Landing Page, Products, Add to cart and Payment page",
+      projectResponsibility:
+        "Responsibility : Made the landing page with some products sliders and also managed the github repo",
       footerLink: [
         {
           name: "Visit Website",

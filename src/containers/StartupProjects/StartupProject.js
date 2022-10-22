@@ -1,7 +1,7 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import "./StartupProjects.css";
-import {bigProjects} from "../../portfolio";
-import {Fade} from "react-reveal";
+import { bigProjects } from "../../portfolio";
+import { Fade } from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function StartupProject() {
@@ -9,12 +9,12 @@ export default function StartupProject() {
     var win = window.open(url, "_blank");
     win.focus();
   }
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
   if (!bigProjects.display) {
     return null;
   }
   return (
-    <Fade bottom duration={1000} distance="20px"> 
+    <Fade bottom duration={1000} distance="20px">
       <div className="main" id="projects">
         <div>
           <h1 className="skills-heading">{bigProjects.title}</h1>
@@ -60,6 +60,27 @@ export default function StartupProject() {
                       }
                     >
                       {project.projectDesc}
+                    </p>
+                    <p
+                      className={
+                        isDark ? "dark-mode card-subtitle" : "card-subtitle"
+                      }
+                    >
+                      {project.projectTech}
+                    </p>
+                    <p
+                      className={
+                        isDark ? "dark-mode card-subtitle" : "card-subtitle"
+                      }
+                    >
+                      {project.projectFeatures}
+                    </p>
+                    <p
+                      className={
+                        isDark ? "dark-mode card-subtitle" : "card-subtitle"
+                      }
+                    >
+                      {project.projectResponsibility}
                     </p>
                     {project.footerLink ? (
                       <div className="project-card-footer">

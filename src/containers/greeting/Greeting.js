@@ -1,5 +1,5 @@
-import React, {useContext} from "react";
-import {Fade} from "react-reveal";
+import React, { useContext } from "react";
+import { Fade } from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.css";
 import landingPerson from "../../assets/lottie/landingPerson";
@@ -7,17 +7,14 @@ import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 
-import {illustration, greeting} from "../../portfolio";
+import { illustration, greeting } from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 // import biswa from '../../assets/images/biswa1.jpeg'
 // import aditya from '../../assets/images/adi.jpg'
-import manoranjan from '../../assets/images/mano.jpg'
-
-
-
+import manoranjan from "../../assets/images/mano.jpg";
 
 export default function Greeting() {
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
   if (!greeting.displayGreeting) {
     return null;
   }
@@ -57,9 +54,14 @@ export default function Greeting() {
           <div className="greeting-image-div">
             {illustration.animated ? (
               <div>
-                  <img style={{borderRadius:"50%"}} width="90%" height="100%" src={manoranjan} alt=""/>
-             </div>
-
+                <img
+                  style={{ borderRadius: "50%", marginTop: "50px" }}
+                  width="80%"
+                  height="100%"
+                  src={manoranjan}
+                  alt=""
+                />
+              </div>
             ) : (
               <img
                 alt="man sitting on table"
