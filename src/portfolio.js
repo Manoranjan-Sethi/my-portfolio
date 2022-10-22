@@ -170,15 +170,6 @@ const workExperiences = {
         "Rourkela Steel Plant (RSP), the first integrated steel plant in the public sector in India, was set up with German collaboration",
       descBullets: [],
     },
-    // {
-    //   role: "Front-end Designer Intern",
-    //   company: "TECHNOBOOT",
-    //   companylogo: "https://i.imgur.com/3LDKinZ.png",
-    //   date: "June 2019 – July 2019",
-    //   desc:
-    //     "We are Committed to Provide Best Websites, Android & iOS Applications, Digital Marketing Services at an affordable price range.",
-    //   descBullets: ["Custom building applications", "Coaching"],
-    // },
   ],
 };
 
